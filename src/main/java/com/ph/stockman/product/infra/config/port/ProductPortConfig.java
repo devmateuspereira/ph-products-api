@@ -1,7 +1,7 @@
 package com.ph.stockman.product.infra.config.port;
 
-import com.ph.stockman.product.application.port.ProductPort;
-import com.ph.stockman.product.application.service.ProductService;
+import com.ph.stockman.product.application.port.query.ProductQueryPort;
+import com.ph.stockman.product.application.service.query.ProductQueryService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -9,9 +9,9 @@ import org.springframework.context.annotation.Configuration;
 public class ProductPortConfig {
 
     @Bean
-    public ProductPort productPort(/*providers e services*/) {
+    public ProductQueryPort productPort(/*providers e services*/) {
         //INJEÇÃO DE DEPENDECIAS
-        return new ProductService(/*providers e services*/);
+        return new ProductQueryService(/*providers e services*/);
     }
 
 }

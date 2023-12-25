@@ -1,6 +1,6 @@
 package com.ph.stockman.product.infra.config.service;
 
-import com.ph.stockman.product.application.service.ProductService;
+import com.ph.stockman.product.application.service.query.ProductQueryService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -8,9 +8,9 @@ import org.springframework.context.annotation.Configuration;
 public class ProductServiceConfig {
 
     @Bean
-    public ProductService productService(/*providers e services*/) {
+    public ProductQueryService productService(/*providers e services*/) {
         //INJEÇÃO DE DEPENDECIAS
-        return new ProductService(/*providers e services*/);
+        return new ProductQueryService(/*providers e services*/);
     }
 
 }

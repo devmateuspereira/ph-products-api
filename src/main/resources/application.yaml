@@ -31,3 +31,8 @@ springdoc:
   api-docs:
     path: /docs
     enabled: true
+
+rest-service:
+  alguma-coisa:
+    host:
+    port:
